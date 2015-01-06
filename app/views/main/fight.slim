@@ -16,6 +16,8 @@ div.row.center
           |  zeny
         h4#exp
           = current_user.exp
+          |  / 
+          = current_user.next
           |  exp
         div.col-md-12
           div.progress.progress-striped.active
@@ -63,7 +65,7 @@ javascript:
       // Запускаем счётчик и в нём указываем - какие действия совершать по истечении срока
       monster_hp.start(function(){
         $.post("/exp",{exp: data.monster.exp, monster_id: data.monster.id}),
-        $("#exp").text(data.user.exp + data.monster.exp + " exp")
+        $("#exp").text((data.user.exp + data.monster.exp) + " / " + data.user.next + " exp")
         $(".progress-bar").css("width", + progress + "%"),
         // Запускаем счётчик заново
         new_monster()
