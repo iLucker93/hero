@@ -128,16 +128,20 @@ div.row.center
 
 
 javascript:
+    // create STR variable 
   $( "#str" ).parent().click(function() {
+    // get monster params
     $.get( "/get_new_monster.json", function( data ) {
+    // work with stats points.  if point !=0, then add 
       if ($("#stats").text() != 0){
         $("#str").text(data.user.str + 1),
+        // remove 1 general point
         $("#stats").text(data.user.statpoint - 1),
         $.post("/stats", {str: 1})
         }
     })
   })
-
+    // copy of STR 
   $( "#luk" ).parent().click(function() {
     $.get( "/get_new_monster.json", function( data ) {
       if ($("#stats").text() != 0){
