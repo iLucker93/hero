@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
-  root 'main#fight'
+  devise_for :users 
+  root 'main#fight' # path on main page 
 
 
   get 'get_new_monster', to: 'main#monster'
@@ -18,6 +18,6 @@ Rails.application.routes.draw do
 
 
   # Route special for me
-    get 'fox', to: 'main#fox'
+    get 'fox', to: 'main#fox' ''
 
 end

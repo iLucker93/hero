@@ -1,18 +1,19 @@
 class MainController < ApplicationController
 
-  # Требуем авторизоваться для любого действия
+  # Demand , authorization for any action 
     before_action :authenticate_user!
 
-  # Страница битвы
+  # Page for fight
     def fight
-      @str = current_user.str
+      @str = current_user.str # 
     end
 
-  # Новый монстр в формате JSON
+  # New monster in JSON format
     def monster
-
+      # find in Map model   user, location and monsters
       @monster = Map.find_by_name(current_user.location).monsters.sample
 
+      # render json params  for user and monster (search at main/fight.slim)
       respond_to do |format|
         format.json {render json: {user: current_user, monster: @monster}}
       end

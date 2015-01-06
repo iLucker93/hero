@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
 
 
 
-  before_create do
+  before_create do # configure player details before create
 
     # self.lvl = rand(40..60)
     self.lvl = 1

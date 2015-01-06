@@ -39,30 +39,31 @@ div.row.center
 javascript:
   jQuery(document).ready(function($) {
 
+    // after loading page run function  new_monster()
+     new_monster() 
 
-    new_monster() // После загрузки страницы сразу запускаем функцию new_monster()
-
-    function new_monster(){
-      // Получаем из экшена Main#monster json-данные, раскидываем их по странице
+    // recive in action  Main#monster json-данные, scatter them around the page
+      function new_monster(){
+      
       $.get( "/get_new_monster.json", function( data ) {
 
 
-      // Разные переменные
+      // variable of EXP 
       var progress = data.user.exp / (data.user.next / 100)
 
-      // Параметры для счётчика
+      // Params for count 
       var options = {useEasing : false, useGrouping : false, separator : ',', decimal : '.', prefix : '', suffix : ' hp'}
 
-
+        // create 'Progress-bar' with CSS , show monster name and image
         $(".progress-bar").css("width", + progress + "%"),
         $("#name").text(data.monster.name)
         $("#monster_image").attr("src", "/images/monsters/" + data.monster.id + ".gif")
 
       
-      // Сам счётчик с параметрами: ("место отображения", начало, конец, группировка, время, параметры)
+      // Counter with the following parameters: ( " display location " , the beginning , the end , the group , the time parameters)
       var monster_hp = new countUp("counter", data.monster.hp, 0, 0, data.monster.hp / #{@str}, options);
 
-      // Запускаем счётчик и в нём указываем - какие действия совершать по истечении срока
+      // Start the counter and in it indicate - what actions to perform after the expiry
       monster_hp.start(function(){
         $.post("/exp",{exp: data.monster.exp, monster_id: data.monster.id}),
         $("#exp").text((data.user.exp + data.monster.exp) + " / " + data.user.next + " exp")

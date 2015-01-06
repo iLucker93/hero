@@ -1,0 +1,2142 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `items` (`attack`, `defence`, `format`, `genders`, `jobs`, `name`, `price_sell`, `refine`, `script`, `slots`, `weapon_lvl`, `weight`) VALUES (17, 0, 'weapon', 'both', 'all', 'knife', 25, 1, '', 4, 1, 40)[0m
+  [1m[35m (38.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `items` (`attack`, `defence`, `format`, `genders`, `jobs`, `name`, `price_sell`, `refine`, `script`, `slots`, `weapon_lvl`, `weight`) VALUES (43, 0, 'weapon', 'both', 'all', 'Main Gauche', 1200, 1, '', 3, 1, 60)
+  [1m[36m (27.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `items` (`attack`, `defence`, `format`, `genders`, `jobs`, `name`, `price_sell`, `refine`, `script`, `slots`, `weapon_lvl`, `weight`) VALUES (0, 0, 'etc', 'both', 'all', 'empty bottle', 3, 0, '', 0, 0, 2)[0m
+  [1m[35m (29.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `items` (`attack`, `defence`, `format`, `genders`, `jobs`, `name`, `price_sell`, `refine`, `script`, `slots`, `weapon_lvl`, `weight`) VALUES (0, 0, 'etc', 'both', 'all', 'garlet', 20, 0, '', 0, 0, 40)
+  [1m[36m (25.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `maps` (`created_at`, `name`, `updated_at`) VALUES ('2015-01-06 13:01:51', 'new_zone03', '2015-01-06 13:01:51')[0m
+  [1m[35m (36.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `monsters` (`agi`, `atk`, `card_chance`, `card_drop`, `def`, `dex`, `element`, `equip_chance`, `equip_drop`, `exp`, `hp`, `int`, `item_chance`, `item_drop`, `jexp`, `luk`, `lvl`, `map_id`, `mdef`, `name`, `quest_chance`, `quest_drop`, `sp`, `str`, `vit`) VALUES (1, 1, 0.01, 4001, 0, 6, 'water_3', 10.0, 1, 2, 50, 0, 10.0, 3, 1, 30, 1, 1, 5, 'Poring', 15.0, 3, 0, 1, 1)
+  [1m[36m (27.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `monsters` (`agi`, `atk`, `card_chance`, `card_drop`, `def`, `dex`, `element`, `equip_chance`, `equip_drop`, `exp`, `hp`, `int`, `item_chance`, `item_drop`, `jexp`, `luk`, `lvl`, `map_id`, `mdef`, `name`, `quest_chance`, `quest_drop`, `sp`, `str`, `vit`) VALUES (14, 72, 0.01, 4033, 0, 19, 'poison_1', 0.05, 2, 81, 344, 0, 2.0, 4, 44, 15, 14, 1, 10, 'Poporing', 15.0, 4, 0, 1, 14)[0m
+  [1m[35m (27.6ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 16:02:58 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MainController#fight as HTML
+Completed 401 Unauthorized in 30ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-01-06 16:02:58 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (72.5ms)
+  Rendered partials/_header.slim (8.5ms)
+Completed 200 OK in 1046ms (Views: 1001.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:02:59 +0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:02:59 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:02:59 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:02:59 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:02:59 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:02:59 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:00 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:00 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:00 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:00 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:00 +0300
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBBieay8GCRc71uUwyaOKpk15U+8JsZSObhyOX/F+1g=", "user"=>{"email"=>"demo@demo.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'demo@demo.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 9ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBBieay8GCRc71uUwyaOKpk15U+8JsZSObhyOX/F+1g=", "user"=>{"email"=>"demo@demo.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.4ms)
+  Rendered partials/_header.slim (0.2ms)
+Completed 200 OK in 240ms (Views: 132.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:08 +0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-06 16:03:12 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (30.8ms)
+  Rendered partials/_header.slim (0.3ms)
+Completed 200 OK in 158ms (Views: 155.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:13 +0300
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-06 16:03:21 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBBieay8GCRc71uUwyaOKpk15U+8JsZSObhyOX/F+1g=", "user"=>{"email"=>"lmyhope3@gmail.com", "username"=>"lmyhope3", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY 'lmyhope3@gmail.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `gender`, `hp`, `job`, `updated_at`, `username`) VALUES ('2015-01-06 13:03:21', 'lmyhope3@gmail.com', '$2a$10$W2hih4senL21EK/RQZQlCOBMzStfslumtqSq1isvfTAH3s8mDfm7C', 'female', 6860, 'novice', '2015-01-06 13:03:21', 'lmyhope3')[0m
+  [1m[35m (115.6ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `current_sign_in_at` = '2015-01-06 13:03:21', `current_sign_in_ip` = '127.0.0.1', `last_sign_in_at` = '2015-01-06 13:03:21', `last_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2015-01-06 13:03:21' WHERE `users`.`id` = 1
+  [1m[36m (37.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 312ms (ActiveRecord: 154.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 16:03:21 +0300
+Processing by MainController#fight as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered main/fight.slim within layouts/application (10.6ms)
+  Rendered partials/_header.slim (0.5ms)
+Completed 200 OK in 123ms (Views: 118.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:22 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.4ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.5ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 129ms (Views: 1.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2015-01-06 16:03:27 +0300
+Processing by MapsController#index as HTML
+  Rendered maps/index.slim within layouts/application (8.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered partials/_header.slim (4.4ms)
+Completed 200 OK in 110ms (Views: 109.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:28 +0300
+
+
+Started POST "/location" for 127.0.0.1 at 2015-01-06 16:03:29 +0300
+Processing by UsersController#location as */*
+  Parameters: {"location"=>"new_zone03"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 17ms (Views: 2.7ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/location" for 127.0.0.1 at 2015-01-06 16:03:31 +0300
+Processing by UsersController#location as */*
+  Parameters: {"location"=>"new_zone03"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (1.6ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 14ms (Views: 1.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+Processing by MainController#fight as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered main/fight.slim within layouts/application (1.3ms)
+  Rendered partials/_header.slim (1.1ms)
+Completed 200 OK in 124ms (Views: 118.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:34 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 15ms (Views: 1.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/show.slim within layouts/application (43.1ms)
+  Rendered partials/_header.slim (0.8ms)
+Completed 200 OK in 153ms (Views: 152.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:45 +0300
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:47 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (1.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 30ms (Views: 1.5ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:47 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `statpoint` = 23, `str` = 2, `updated_at` = '2015-01-06 13:03:47' WHERE `users`.`id` = 1[0m
+  [1m[35m (35.1ms)[0m  COMMIT
+Completed 200 OK in 49ms (Views: 1.0ms | ActiveRecord: 35.7ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:48 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 20ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:48 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `statpoint` = 22, `str` = 3, `updated_at` = '2015-01-06 13:03:48' WHERE `users`.`id` = 1
+  [1m[36m (109.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 122ms (Views: 0.7ms | ActiveRecord: 110.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:49 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 14ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:49 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `statpoint` = 21, `str` = 4, `updated_at` = '2015-01-06 13:03:49' WHERE `users`.`id` = 1[0m
+  [1m[35m (42.1ms)[0m  COMMIT
+Completed 200 OK in 69ms (Views: 1.3ms | ActiveRecord: 42.8ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:49 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 20ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:49 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `statpoint` = 20, `str` = 5, `updated_at` = '2015-01-06 13:03:49' WHERE `users`.`id` = 1
+  [1m[36m (42.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 54ms (Views: 1.1ms | ActiveRecord: 42.8ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:49 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.5ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 23ms (Views: 2.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:49 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `statpoint` = 19, `str` = 6, `updated_at` = '2015-01-06 13:03:49' WHERE `users`.`id` = 1[0m
+  [1m[35m (49.9ms)[0m  COMMIT
+Completed 200 OK in 66ms (Views: 1.0ms | ActiveRecord: 50.5ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:49 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (5.0ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 27ms (Views: 1.6ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:49 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `statpoint` = 18, `str` = 7, `updated_at` = '2015-01-06 13:03:49' WHERE `users`.`id` = 1
+  [1m[36m (37.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 52ms (Views: 0.7ms | ActiveRecord: 38.3ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:49 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 16ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:49 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `statpoint` = 17, `str` = 8, `updated_at` = '2015-01-06 13:03:49' WHERE `users`.`id` = 1[0m
+  [1m[35m (33.3ms)[0m  COMMIT
+Completed 200 OK in 46ms (Views: 1.0ms | ActiveRecord: 33.9ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:50 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.3ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 21ms (Views: 1.8ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:50 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `statpoint` = 16, `str` = 9, `updated_at` = '2015-01-06 13:03:50' WHERE `users`.`id` = 1
+  [1m[36m (43.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 62ms (Views: 0.9ms | ActiveRecord: 45.0ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:50 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.7ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 27ms (Views: 3.7ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:50 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `statpoint` = 15, `str` = 10, `updated_at` = '2015-01-06 13:03:50' WHERE `users`.`id` = 1[0m
+  [1m[35m (37.3ms)[0m  COMMIT
+Completed 200 OK in 55ms (Views: 1.0ms | ActiveRecord: 38.1ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:51 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 17ms (Views: 1.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:51 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `luk` = 2, `statpoint` = 14, `updated_at` = '2015-01-06 13:03:51' WHERE `users`.`id` = 1
+  [1m[36m (25.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 37ms (Views: 0.6ms | ActiveRecord: 26.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:51 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (2.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 24ms (Views: 3.3ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:51 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `luk` = 3, `statpoint` = 13, `updated_at` = '2015-01-06 13:03:51' WHERE `users`.`id` = 1[0m
+  [1m[35m (27.8ms)[0m  COMMIT
+Completed 200 OK in 41ms (Views: 0.7ms | ActiveRecord: 28.3ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:51 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.6ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 22ms (Views: 2.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:51 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `luk` = 4, `statpoint` = 12, `updated_at` = '2015-01-06 13:03:51' WHERE `users`.`id` = 1
+  [1m[36m (25.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 36ms (Views: 0.9ms | ActiveRecord: 26.0ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:51 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.5ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (2.3ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 28ms (Views: 2.4ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:51 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `luk` = 5, `statpoint` = 11, `updated_at` = '2015-01-06 13:03:51' WHERE `users`.`id` = 1[0m
+  [1m[35m (26.7ms)[0m  COMMIT
+Completed 200 OK in 44ms (Views: 1.3ms | ActiveRecord: 27.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:51 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.4ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 22ms (Views: 1.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:51 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `luk` = 6, `statpoint` = 10, `updated_at` = '2015-01-06 13:03:51' WHERE `users`.`id` = 1
+  [1m[36m (31.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 47ms (Views: 0.9ms | ActiveRecord: 32.5ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:52 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 26ms (Views: 3.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:52 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `luk` = 7, `statpoint` = 9, `updated_at` = '2015-01-06 13:03:52' WHERE `users`.`id` = 1[0m
+  [1m[35m (28.1ms)[0m  COMMIT
+Completed 200 OK in 44ms (Views: 0.7ms | ActiveRecord: 28.9ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:52 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (2.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 24ms (Views: 3.3ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:52 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `luk` = 8, `statpoint` = 8, `updated_at` = '2015-01-06 13:03:52' WHERE `users`.`id` = 1
+  [1m[36m (31.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 47ms (Views: 1.2ms | ActiveRecord: 32.3ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:52 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (1.6ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 15ms (Views: 1.3ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:52 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `luk` = 9, `statpoint` = 7, `updated_at` = '2015-01-06 13:03:52' WHERE `users`.`id` = 1[0m
+  [1m[35m (28.6ms)[0m  COMMIT
+Completed 200 OK in 41ms (Views: 0.7ms | ActiveRecord: 29.2ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:52 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.4ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 22ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:52 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (1.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `luk` = 10, `statpoint` = 6, `updated_at` = '2015-01-06 13:03:52' WHERE `users`.`id` = 1
+  [1m[36m (35.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 52ms (Views: 1.1ms | ActiveRecord: 37.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:53 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 12ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:53 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `statpoint` = 5, `str` = 11, `updated_at` = '2015-01-06 13:03:53' WHERE `users`.`id` = 1[0m
+  [1m[35m (31.5ms)[0m  COMMIT
+Completed 200 OK in 44ms (Views: 0.9ms | ActiveRecord: 32.2ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:53 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:53 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `statpoint` = 4, `str` = 12, `updated_at` = '2015-01-06 13:03:53' WHERE `users`.`id` = 1
+  [1m[36m (28.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 43ms (Views: 0.9ms | ActiveRecord: 29.6ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:53 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.5ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 22ms (Views: 2.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:54 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"str"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `statpoint` = 3, `str` = 13, `updated_at` = '2015-01-06 13:03:54' WHERE `users`.`id` = 1[0m
+  [1m[35m (62.2ms)[0m  COMMIT
+Completed 200 OK in 77ms (Views: 1.0ms | ActiveRecord: 62.8ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:54 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (3.9ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.3ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 27ms (Views: 4.1ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:54 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `luk` = 11, `statpoint` = 2, `updated_at` = '2015-01-06 13:03:54' WHERE `users`.`id` = 1
+  [1m[36m (61.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 72ms (Views: 0.7ms | ActiveRecord: 62.0ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:54 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.3ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 18ms (Views: 1.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:54 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE `users` SET `luk` = 12, `statpoint` = 1, `updated_at` = '2015-01-06 13:03:54' WHERE `users`.`id` = 1[0m
+  [1m[35m (31.0ms)[0m  COMMIT
+Completed 200 OK in 47ms (Views: 0.6ms | ActiveRecord: 32.0ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:54 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 27ms (Views: 1.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/stats" for 127.0.0.1 at 2015-01-06 16:03:54 +0300
+Processing by UsersController#stats as */*
+  Parameters: {"luk"=>"1"}
+  Rendered text template (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `luk` = 13, `statpoint` = 0, `updated_at` = '2015-01-06 13:03:54' WHERE `users`.`id` = 1
+  [1m[36m (33.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 48ms (Views: 0.7ms | ActiveRecord: 34.3ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+Processing by MapsController#index as HTML
+  Rendered maps/index.slim within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered partials/_header.slim (6.0ms)
+Completed 200 OK in 113ms (Views: 111.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:56 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+Processing by MainController#fight as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered main/fight.slim within layouts/application (1.1ms)
+  Rendered partials/_header.slim (0.4ms)
+Completed 200 OK in 89ms (Views: 85.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:03:57 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 33ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:04:24 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.4ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 81, `updated_at` = '2015-01-06 13:04:24' WHERE `users`.`id` = 1
+  [1m[36m (42.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 85ms (Views: 0.7ms | ActiveRecord: 44.9ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:04:24 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:04:28 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.3ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 83, `updated_at` = '2015-01-06 13:04:28' WHERE `users`.`id` = 1
+  [1m[36m (35.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 55ms (Views: 0.6ms | ActiveRecord: 36.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:04:28 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 21ms (Views: 10.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:04:32 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 85, `updated_at` = '2015-01-06 13:04:32' WHERE `users`.`id` = 1
+  [1m[36m (46.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 77ms (Views: 1.7ms | ActiveRecord: 47.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:04:32 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 16ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:04:36 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (1.5ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE `users` SET `exp` = 87, `updated_at` = '2015-01-06 13:04:36' WHERE `users`.`id` = 1
+  [1m[36m (36.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 59ms (Views: 0.8ms | ActiveRecord: 38.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:04:36 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 16ms (Views: 1.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:04:40 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 89, `updated_at` = '2015-01-06 13:04:40' WHERE `users`.`id` = 1
+  [1m[36m (38.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 64ms (Views: 0.7ms | ActiveRecord: 39.9ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:04:40 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 19ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:04:44 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 18ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:04:44 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `exp` = 91, `updated_at` = '2015-01-06 13:04:44' WHERE `users`.`id` = 1[0m
+  [1m[35m (83.4ms)[0m  COMMIT
+Completed 200 OK in 103ms (Views: 1.2ms | ActiveRecord: 84.3ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:04:48 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `boxes` (`created_at`, `ea`, `format`, `item_id`, `price`, `updated_at`, `user_id`) VALUES ('2015-01-06 13:04:48', 1, 'weapon', 1, 25, '2015-01-06 13:04:48', 1)
+  [1m[36m (38.4ms)[0m  [1mCOMMIT[0m
+  Rendered text template (0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `users` SET `exp` = 93, `updated_at` = '2015-01-06 13:04:48' WHERE `users`.`id` = 1[0m
+  [1m[35m (29.5ms)[0m  COMMIT
+Completed 200 OK in 126ms (Views: 0.9ms | ActiveRecord: 71.1ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:04:48 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 13ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:05:15 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 14ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:05:15 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 174, `updated_at` = '2015-01-06 13:05:15' WHERE `users`.`id` = 1
+  [1m[36m (34.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 57ms (Views: 0.9ms | ActiveRecord: 35.4ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:05:41 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1
+  [1m[36mItem Load (0.9ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `exp` = 255, `updated_at` = '2015-01-06 13:05:41' WHERE `users`.`id` = 1[0m
+  [1m[35m (47.1ms)[0m  COMMIT
+Completed 200 OK in 79ms (Views: 1.0ms | ActiveRecord: 49.2ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:05:41 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 13ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:06:08 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[35mMonster Load (0.1ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `exp` = 336, `updated_at` = '2015-01-06 13:06:08' WHERE `users`.`id` = 1[0m
+  [1m[35m (27.9ms)[0m  COMMIT
+Completed 200 OK in 55ms (Views: 1.1ms | ActiveRecord: 28.9ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:06:08 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.1ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:06:12 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `exp` = 338, `updated_at` = '2015-01-06 13:06:12' WHERE `users`.`id` = 1[0m
+  [1m[35m (37.5ms)[0m  COMMIT
+Completed 200 OK in 73ms (Views: 1.2ms | ActiveRecord: 38.6ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:06:12 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 12ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:06:38 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `exp` = 419, `updated_at` = '2015-01-06 13:06:38' WHERE `users`.`id` = 1[0m
+  [1m[35m (32.1ms)[0m  COMMIT
+Completed 200 OK in 58ms (Views: 0.9ms | ActiveRecord: 33.1ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:06:38 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 12ms (Views: 1.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:06:42 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[35mMonster Load (0.1ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `exp` = 421, `updated_at` = '2015-01-06 13:06:42' WHERE `users`.`id` = 1[0m
+  [1m[35m (44.9ms)[0m  COMMIT
+Completed 200 OK in 72ms (Views: 1.0ms | ActiveRecord: 46.1ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:06:42 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.1ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:06:46 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 18ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:06:46 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 423, `updated_at` = '2015-01-06 13:06:46' WHERE `users`.`id` = 1
+  [1m[36m (38.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 69ms (Views: 0.6ms | ActiveRecord: 39.9ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:07:13 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[35mMonster Load (0.1ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `exp` = 504, `updated_at` = '2015-01-06 13:07:13' WHERE `users`.`id` = 1[0m
+  [1m[35m (39.4ms)[0m  COMMIT
+Completed 200 OK in 59ms (Views: 0.7ms | ActiveRecord: 40.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:07:13 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (2.1ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 17ms (Views: 1.2ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:07:17 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1
+  [1m[36mItem Load (1.5ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `exp` = 506, `updated_at` = '2015-01-06 13:07:17' WHERE `users`.`id` = 1[0m
+  [1m[35m (31.9ms)[0m  COMMIT
+Completed 200 OK in 70ms (Views: 1.3ms | ActiveRecord: 34.3ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:07:17 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.3ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:07:21 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[35mMonster Load (0.1ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `exp` = 508, `updated_at` = '2015-01-06 13:07:21' WHERE `users`.`id` = 1[0m
+  [1m[35m (36.0ms)[0m  COMMIT
+Completed 200 OK in 61ms (Views: 0.6ms | ActiveRecord: 36.9ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:07:21 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 24ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:07:25 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `exp` = 510, `updated_at` = '2015-01-06 13:07:25' WHERE `users`.`id` = 1[0m
+  [1m[35m (33.0ms)[0m  COMMIT
+Completed 200 OK in 68ms (Views: 1.3ms | ActiveRecord: 34.2ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:07:25 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.1ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 13ms (Views: 1.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:07:29 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `exp` = 512, `updated_at` = '2015-01-06 13:07:29' WHERE `users`.`id` = 1[0m
+  [1m[35m (47.0ms)[0m  COMMIT
+Completed 200 OK in 74ms (Views: 0.7ms | ActiveRecord: 48.0ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:07:29 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 21ms (Views: 1.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:07:55 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `exp` = 593, `updated_at` = '2015-01-06 13:07:55' WHERE `users`.`id` = 1[0m
+  [1m[35m (62.8ms)[0m  COMMIT
+Completed 200 OK in 87ms (Views: 0.9ms | ActiveRecord: 63.9ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:07:55 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.1ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:08:22 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 17ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:08:22 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (3.0ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 674, `updated_at` = '2015-01-06 13:08:22' WHERE `users`.`id` = 1
+  [1m[36m (36.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `lvl` = 2, `next` = 1080, `statpoint` = 1, `updated_at` = '2015-01-06 13:08:22' WHERE `users`.`id` = 1[0m
+  [1m[35m (31.8ms)[0m  COMMIT
+Completed 200 OK in 110ms (Views: 0.7ms | ActiveRecord: 72.2ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:08:26 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 676, `updated_at` = '2015-01-06 13:08:26' WHERE `users`.`id` = 1
+  [1m[36m (34.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 59ms (Views: 0.9ms | ActiveRecord: 35.8ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:08:26 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 26ms (Views: 1.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:08:30 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.3ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 678, `updated_at` = '2015-01-06 13:08:30' WHERE `users`.`id` = 1
+  [1m[36m (42.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 72ms (Views: 1.3ms | ActiveRecord: 43.2ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:08:30 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 17ms (Views: 2.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:08:56 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 759, `updated_at` = '2015-01-06 13:08:56' WHERE `users`.`id` = 1
+  [1m[36m (33.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 60ms (Views: 1.3ms | ActiveRecord: 34.2ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:08:56 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:09:00 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 761, `updated_at` = '2015-01-06 13:09:00' WHERE `users`.`id` = 1
+  [1m[36m (49.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 72ms (Views: 0.7ms | ActiveRecord: 50.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:09:00 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.4ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 19ms (Views: 1.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:09:04 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 763, `updated_at` = '2015-01-06 13:09:04' WHERE `users`.`id` = 1
+  [1m[36m (46.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 67ms (Views: 0.8ms | ActiveRecord: 47.5ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:09:04 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 14ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:09:31 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 844, `updated_at` = '2015-01-06 13:09:31' WHERE `users`.`id` = 1
+  [1m[36m (44.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 69ms (Views: 0.7ms | ActiveRecord: 45.3ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:09:31 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:09:35 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 846, `updated_at` = '2015-01-06 13:09:35' WHERE `users`.`id` = 1
+  [1m[36m (40.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 61ms (Views: 0.6ms | ActiveRecord: 41.1ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:09:35 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 13ms (Views: 2.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:21:10 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 927, `updated_at` = '2015-01-06 13:21:10' WHERE `users`.`id` = 1
+  [1m[36m (36.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 146ms (Views: 1.1ms | ActiveRecord: 42.1ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:21:10 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (1.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 27ms (Views: 0.9ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:31:52 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 1008, `updated_at` = '2015-01-06 13:31:52' WHERE `users`.`id` = 1
+  [1m[36m (37.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 167ms (Views: 1.5ms | ActiveRecord: 42.9ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:31:52 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 25ms (Views: 1.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:42:12 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 1089, `updated_at` = '2015-01-06 13:42:12' WHERE `users`.`id` = 1
+  [1m[36m (40.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `lvl` = 3, `next` = 1800, `statpoint` = 2, `updated_at` = '2015-01-06 13:42:12' WHERE `users`.`id` = 1[0m
+  [1m[35m (37.4ms)[0m  COMMIT
+Completed 200 OK in 199ms (Views: 1.5ms | ActiveRecord: 85.0ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:42:12 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.1ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 22ms (Views: 1.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/show.slim within layouts/application (10.6ms)
+  Rendered partials/_header.slim (0.5ms)
+Completed 200 OK in 84ms (Views: 83.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:16 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-06 16:42:19 +0300
+Processing by MainController#fight as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered main/fight.slim within layouts/application (12.4ms)
+  Rendered partials/_header.slim (0.4ms)
+Completed 200 OK in 83ms (Views: 79.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/assets/monsters.css?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/assets/countUp.min.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/assets/monsters.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:42:20 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 14ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:42:46 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 1170, `updated_at` = '2015-01-06 13:42:46' WHERE `users`.`id` = 1
+  [1m[36m (101.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 125ms (Views: 0.7ms | ActiveRecord: 102.5ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:42:47 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:42:50 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 1172, `updated_at` = '2015-01-06 13:42:50' WHERE `users`.`id` = 1
+  [1m[36m (41.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 60ms (Views: 0.6ms | ActiveRecord: 42.7ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:42:50 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.3ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:43:17 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 1253, `updated_at` = '2015-01-06 13:43:17' WHERE `users`.`id` = 1
+  [1m[36m (37.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 56ms (Views: 0.6ms | ActiveRecord: 38.6ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:43:17 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 10ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:43:21 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 1255, `updated_at` = '2015-01-06 13:43:21' WHERE `users`.`id` = 1
+  [1m[36m (37.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 62ms (Views: 0.7ms | ActiveRecord: 38.7ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:43:21 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:43:25 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 1257, `updated_at` = '2015-01-06 13:43:25' WHERE `users`.`id` = 1
+  [1m[36m (51.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 75ms (Views: 0.6ms | ActiveRecord: 52.0ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:43:25 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:43:52 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 1338, `updated_at` = '2015-01-06 13:43:52' WHERE `users`.`id` = 1
+  [1m[36m (57.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 79ms (Views: 0.6ms | ActiveRecord: 58.7ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:43:52 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:43:55 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.1ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `users` SET `exp` = 1340, `updated_at` = '2015-01-06 13:43:56' WHERE `users`.`id` = 1
+  [1m[36m (42.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 63ms (Views: 0.7ms | ActiveRecord: 43.2ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:43:56 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 13ms (Views: 2.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:44:22 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 1421, `updated_at` = '2015-01-06 13:44:22' WHERE `users`.`id` = 1
+  [1m[36m (35.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 54ms (Views: 0.6ms | ActiveRecord: 36.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:44:22 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:44:49 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 1502, `updated_at` = '2015-01-06 13:44:49' WHERE `users`.`id` = 1
+  [1m[36m (80.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 100ms (Views: 0.6ms | ActiveRecord: 81.1ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:44:49 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 18ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:44:53 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 1504, `updated_at` = '2015-01-06 13:44:53' WHERE `users`.`id` = 1
+  [1m[36m (40.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 59ms (Views: 0.6ms | ActiveRecord: 41.1ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:44:53 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 13ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:44:57 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.3ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (1.1ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 1506, `updated_at` = '2015-01-06 13:44:57' WHERE `users`.`id` = 1
+  [1m[36m (31.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 50ms (Views: 0.6ms | ActiveRecord: 33.6ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:44:57 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.1ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 12ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:45:23 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 1587, `updated_at` = '2015-01-06 13:45:23' WHERE `users`.`id` = 1
+  [1m[36m (49.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 70ms (Views: 0.7ms | ActiveRecord: 50.6ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:45:23 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:45:50 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 1668, `updated_at` = '2015-01-06 13:45:50' WHERE `users`.`id` = 1
+  [1m[36m (40.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 61ms (Views: 0.8ms | ActiveRecord: 41.3ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:45:50 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:46:16 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 1749, `updated_at` = '2015-01-06 13:46:16' WHERE `users`.`id` = 1
+  [1m[36m (36.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 65ms (Views: 0.7ms | ActiveRecord: 37.9ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:46:16 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.2ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:46:20 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[36mMonster Load (0.1ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `exp` = 1751, `updated_at` = '2015-01-06 13:46:20' WHERE `users`.`id` = 1
+  [1m[36m (45.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 68ms (Views: 0.6ms | ActiveRecord: 46.5ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:46:20 +0300
+Processing by MainController#monster as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mMap Load (0.1ms)[0m  [1mSELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1[0m
+  [1m[35mMonster Load (0.2ms)[0m  SELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1
+Completed 200 OK in 13ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:46:24 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:46:24 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `exp` = 1753, `updated_at` = '2015-01-06 13:46:24' WHERE `users`.`id` = 1[0m
+  [1m[35m (36.4ms)[0m  COMMIT
+Completed 200 OK in 60ms (Views: 0.8ms | ActiveRecord: 37.6ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:46:52 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[36mMonster Load (0.3ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `exp` = 1834, `updated_at` = '2015-01-06 13:46:52' WHERE `users`.`id` = 1
+  [1m[36m (35.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `users` SET `lvl` = 4, `next` = 2640, `statpoint` = 3, `updated_at` = '2015-01-06 13:46:52' WHERE `users`.`id` = 1[0m
+  [1m[35m (37.1ms)[0m  COMMIT
+Completed 200 OK in 115ms (Views: 1.5ms | ActiveRecord: 75.4ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:46:52 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.1ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 11ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:46:56 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `exp` = 1836, `updated_at` = '2015-01-06 13:46:56' WHERE `users`.`id` = 1[0m
+  [1m[35m (34.9ms)[0m  COMMIT
+Completed 200 OK in 75ms (Views: 1.1ms | ActiveRecord: 36.3ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:46:56 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.3ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 11ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:47:00 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"2", "monster_id"=>"1"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 1 LIMIT 1[0m  [["id", "1"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `exp` = 1838, `updated_at` = '2015-01-06 13:47:00' WHERE `users`.`id` = 1[0m
+  [1m[35m (31.6ms)[0m  COMMIT
+Completed 200 OK in 50ms (Views: 0.6ms | ActiveRecord: 32.7ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:47:00 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.2ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.3ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/exp" for 127.0.0.1 at 2015-01-06 16:47:27 +0300
+Processing by UsersController#exp as */*
+  Parameters: {"exp"=>"81", "monster_id"=>"2"}
+  [1m[35mMonster Load (0.2ms)[0m  SELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  `items`.* FROM `items`  WHERE `items`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `monsters`.* FROM `monsters`  WHERE `monsters`.`id` = 2 LIMIT 1[0m  [["id", "2"]]
+  Rendered text template (0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `exp` = 1919, `updated_at` = '2015-01-06 13:47:27' WHERE `users`.`id` = 1[0m
+  [1m[35m (46.3ms)[0m  COMMIT
+Completed 200 OK in 64ms (Views: 0.6ms | ActiveRecord: 47.3ms)
+
+
+Started GET "/get_new_monster.json" for 127.0.0.1 at 2015-01-06 16:47:27 +0300
+Processing by MainController#monster as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mMap Load (0.1ms)[0m  SELECT  `maps`.* FROM `maps`  WHERE `maps`.`name` = 'new_zone03' LIMIT 1
+  [1m[36mMonster Load (0.2ms)[0m  [1mSELECT `monsters`.* FROM `monsters`  WHERE `monsters`.`map_id` = 1[0m
+Completed 200 OK in 12ms (Views: 1.1ms | ActiveRecord: 0.6ms)
